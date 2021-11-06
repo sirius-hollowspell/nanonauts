@@ -86,7 +86,7 @@ img {
 
 /* Embeds */
 
-iframe {
+iframe.src {
 	border: 4px solid Gray;
 	border-radius: 10px;
 }
