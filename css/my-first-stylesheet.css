@@ -83,3 +83,10 @@ img {
 	border: 4px solid Gray;
 	border-radius: 10px;
 }
+
+/* Embeds */
+
+iframe {
+	border: 4px solid Gray;
+	border-radius: 10px;
+}
