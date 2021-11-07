@@ -16,8 +16,8 @@ body {
 }
 
 html {
-	background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-	background-size: 8px 8px;
+	border: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+	border-size: 8px 8px;
 }
 
 /* Links */
