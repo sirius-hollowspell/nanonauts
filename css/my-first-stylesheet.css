@@ -25,9 +25,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	background-color: #99EB99;
-	border: 6px solid #99EB99;
-	border-radius: 10px;
 }
 
 a:visited {
@@ -64,6 +61,12 @@ nav ul li:last-child {
 nav ul li a {
 	text-decoration: none;
 	color: #111111;
+}
+
+nav ul li a:hover {
+	background-color: #99EB99;
+	border: 6px solid #99EB99;
+	border-radius: 10px;
 }
 
 /* Top Tip */
