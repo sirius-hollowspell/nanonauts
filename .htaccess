@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Site"
+AuthUserFile github.com/sirius-hollowspell/nanonauts/.htpasswd
+require valid-user
