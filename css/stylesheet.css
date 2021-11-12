@@ -15,17 +15,9 @@ body {
 
 /* Links */
 
-a {
+body a, a:visited, a:link {
 	color: #006DAA;
 	text-decoration: none;
-}
-/*
-a:hover {
-	text-decoration: underline;
-}
-*/
-a:visited, a:link {
-	color: #006DAA;
 }
 
 /* Navigation Bar */
@@ -36,6 +28,12 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+}
+
+nav ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav ul li {
