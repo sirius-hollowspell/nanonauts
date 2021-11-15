@@ -10,21 +10,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<nav class="topnav">
+	<div class="header">
+		<h1>About Me</h1>
+	</div>
+	<div id="navbar">
 		<ul>
 			<li><a href="index.html">Home Page</a></li>
 			<li><a class="active" href="about-me.html">About Me</a></li>
 			<li><a href="my-projects.html">My Projects</a></li>
 			<li><a href="blog.html">Blog</a></li>
 		</ul>
-	</nav><br>
-	<p class="top-tip">Use the Nanonaut's book to learn how to code HTML!</p>
-	<h1>About Me</h1>
-	<p><img src="images/my-picrew.png" alt="My Picrew"/></p>
-	<p><img src="images/tyler-holding-count.jpeg" alt="Sirius holding his Squishmallow, Count" width="600" height="474"/></p>
-	<p>I am Tyler Walker.</p>
-	<p>This is my ePortfolio of projects I have completed.</p>
-	<p>I am learning how to make a website for my Dojo Nano.</p>
-	<p>As I have already stated, my name is <strong>Tyler</strong> and my pronouns are <strong>He/Them.</strong></p>
+	</div><br>
+	<div class="content">
+		<p class="top-tip">Use the Nanonaut's book to learn how to code HTML!</p>
+		<p><img src="images/my-picrew.png" alt="My Picrew"/></p>
+		<p><img src="images/tyler-holding-count.jpeg" alt="Sirius holding his Squishmallow, Count" width="600" height="474"/></p>
+		<p>I am Tyler Walker.</p>
+		<p>This is my ePortfolio of projects I have completed.</p>
+		<p>I am learning how to make a website for my Dojo Nano.</p>
+		<p>As I have already stated, my name is <strong>Tyler</strong> and my pronouns are <strong>He/Them.</strong></p>
+	</div>
+	
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+	
 </body>
 </html>

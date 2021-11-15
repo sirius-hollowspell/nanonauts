@@ -1,35 +1,21 @@
 body {
 	background-color: #FFFFFF;
 	color: #353535;
-	font-family: sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
+	margin: 0;
+	/*
 	max-width: 1024px;
-	min-width: 256px;
-}
-/*
-body !nav {
-	margin-left: 0px;
-	margin-right: auto;
-	padding-top: 8px;
-	padding-bottom: 24px;
-	padding-left: 0px;
-	padding-right: 24px;
+	min-width: 256px;*/
 }
 
-body nav {
-	margin-left: 0px;
-	margin-right: auto;
-	padding-top: 8px;
-	padding-bottom: 24px;
-	padding-left: 0px;
-	padding-right: 24px;
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
 }
-*/
+
 /* Links */
-
-/* TODO:
-	- Find exclusion selector
-*/
 
 a, a:visited, a:link {
 	color: #006DAA;
@@ -38,27 +24,66 @@ a, a:visited, a:link {
 
 /* Navigation Bar */
 
-nav.topnav {
-	padding-bottom: 10px;
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
 }
 
-nav ul {
+#navbar ul {
+	list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar ul a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar ul a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar ul a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+div#navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
 }
 
-nav ul li {
+div ul li {
   float: left;
 }
 
-nav.topnav ul li a {
+div.navbar ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -66,19 +91,19 @@ nav.topnav ul li a {
   text-decoration: none;
 }
 
-nav ul li {
+div ul li {
   border-right: 1px solid #bbb;
 }
 
-nav ul li:last-child {
+div ul li:last-child {
   border-right: none;
 }
 
-nav ul li a:hover {
+div ul li a:hover {
   background-color: #111;
 }
 
-nav ul li a.active {
+div ul li a.active {
 	background-color: #04AA6D;
 }
 
@@ -102,40 +127,4 @@ p.top-tip::before {
 img {
 	border: 4px solid Gray;
 	border-radius: 10px;
-}
-
-/* Borders */
-
-p.dotted {
-	border-style: dotted;
-}
-p.dashed {
-	border-style: dashed;
-}
-p.solid {
-	border-style: solid;
-}
-p.double {
-	border-style: double;
-}
-p.groove {
-	border-style: groove;
-}
-p.ridge {
-	border-style: ridge;
-}
-p.inset {
-	border-style: inset;
-}
-p.outset {
-	border-style: outset;
-}
-p.none {
-	border-style: none;
-}
-p.hidden {
-	border-style: hidden;
-}
-p.mix {
-	border-style: dotted dashed solid double;
 }
