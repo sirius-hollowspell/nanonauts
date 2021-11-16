@@ -128,3 +128,12 @@ img {
 	border: 4px solid Gray;
 	border-radius: 10px;
 }
+
+/* Footer */
+
+#footer {
+	background-color: #F1F1F1;
+	display: block;
+	padding: 16px;
+	text-align: center;
+}
