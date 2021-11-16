@@ -28,5 +28,27 @@
 			</ul><br><br>
 		<iframe src="https://scratch.mit.edu/projects/31651654/embed" style="border: 4px solid Gray; border-radius: 10px" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 	</div>
+	<div id="footer">
+	<footer>
+		<p>Copyright 2021 Sirius Hollowspell</p>
+		<p>All rights reserved</p>
+	</footer>
+	</div>
+	
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+	
 </body>
 </html>
