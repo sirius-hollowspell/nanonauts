@@ -36,7 +36,7 @@ div#navbar ul {
     padding: 0px;
 }
 
-:not(div.content) div#navbar ul a {
+div#navbar ul a {
   float: left;
   display: block;
   color: #f2f2f2;
