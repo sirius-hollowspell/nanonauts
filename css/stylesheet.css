@@ -24,19 +24,19 @@ a, a:visited, a:link {
 
 /* Navigation Bar */
 
-#navbar {
+div#navbar {
   overflow: hidden;
   background-color: #333;
   width: 100%;
 }
 
-#navbar ul {
+div#navbar ul {
 	list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
 
-#navbar ul a {
+div#navbar ul a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -46,12 +46,12 @@ a, a:visited, a:link {
   font-size: 17px;
 }
 
-#navbar ul a:hover {
+div#navbar ul a:hover {
   background-color: #ddd;
   color: black;
 }
 
-#navbar ul a.active {
+div#navbar ul a.active {
   background-color: #04AA6D;
   color: white;
 }
@@ -79,10 +79,10 @@ div#navbar ul {
   width: 100%;
 }
 
-div ul li {
+div#navbar ul li {
   float: left;
 }
-
+/*
 div.navbar ul li a {
   display: block;
   color: white;
@@ -90,20 +90,16 @@ div.navbar ul li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-div ul li {
+*/
+div#navbar ul li {
   border-right: 1px solid #bbb;
 }
 
-div ul li:last-child {
+div#navbar ul li:last-child {
   border-right: none;
 }
 
-div ul li a:hover {
-  background-color: #111;
-}
-
-div ul li a.active {
+div#navbar ul li a.active {
 	background-color: #04AA6D;
 }
 
